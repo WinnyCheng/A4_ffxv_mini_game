@@ -1,14 +1,9 @@
 import {startGame} from "./gameController.js";
 
 const begin = function (name) {
-    console.log(name);
     let canvas = document.getElementById("game");
     startGame(name, canvas);
-    let images = document.getElementsByTagName("img");
-    let i;
-    for (i = 0; i < images.length; i += 1) {
-        images[i].style.display = "none";
-    }
+    document.getElementById("chooseChara").style.display = "none";
 };
 
 window.onload = function () {
@@ -29,6 +24,3 @@ window.onload = function () {
         begin("Prompto");
     };
 };
-
-
-

@@ -477,7 +477,6 @@ function animateAction(ctx, canWidth, canHeight){
             }
             ctx.clearRect(0, 0, canWidth, canHeight);
             ctx.drawImage(spriteImage, srcX, srcY, width, height, x+moveX, y+moveY, width, height);
-            console.log("Hello");
         }
 
         setInterval(function(){

@@ -43,6 +43,9 @@ function keyEvent(event){
                     canPressKey = true;
                 }, delay3);
                 break;
+            case "h":
+                swal("Game Control Keys", "w: move up\ns: move down\na: move left\nd: move right\n\nj: attack\nk: special attack\nu: special action\n\n h: help");
+                break;
         }
     }
 }
@@ -86,9 +89,10 @@ function keyUpEvent(event){
 }
 
 function startGame(name, canvas){
-    canvas.width = 700;
-    canvas.height = 500;
-    canvas.style.background = "gray";
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvas.style.backgroundImage = "url('../images/background.png')";
+    canvas.style.backgroundSize = "866px 561px";
     let ctx = canvas.getContext("2d");
 
     if(name === "Gladio") {

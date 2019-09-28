@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>FFXV Mini Exploration</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    <img id="Gladio" src="images/Gladio.png" alt="Gladio">
-    <img id="Ignis" src="images/Ignis.png" alt="Ignis">
-    <img id="Noctis" src="images/Noctis.png" alt=Noctis">
-    <img id="Prompto" src="images/Prompto.png" alt="Prompto">
+    <div id="chooseChara">
+        <h1>Choose Your Character</h1>
+        <div id="images">
+            <img id="Gladio" src="images/Gladio.png" alt="Gladio">
+            <img id="Ignis" src="images/Ignis.png" alt="Ignis">
+            <img id="Noctis" src="images/Noctis.png" alt=Noctis">
+            <img id="Prompto" src="images/Prompto.png" alt="Prompto">
+        </div>
+        <p>
+            Choose a Final Fantasy Character of your choice: the muscular,
+            all mighty shield <b>Gladio Amicitia</b>, the cool, intelligent
+            adviser <b>Ignis Scientia</b>, the handsome, sleepy, young prince
+            <b>Noctis Lucis Caelum</b>, and the cute, playfull photographer
+            <b>Prompto Argentum</b>. Choose any character by clicking on his image.
+            It will then bring you to a to another page where you can move the character
+            around as you like using the <b>w, a, s, d</b> keys. Press <b>j</b> to
+            attack and press <b>k</b> for a special attack. Press <b>u</b> and the
+            character does a little action.
+        </p>
+    </div>
+
     <canvas id="game"></canvas>
     <script src="js/main.js" type="module"></script>
 </body>
